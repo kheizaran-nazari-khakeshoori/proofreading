@@ -1,6 +1,7 @@
 const specialTexts = [
   {
     label: "01",
+    featured: true,
     body: "Good writing is clear. Great writing is also kind to the reader.",
   },
   {
