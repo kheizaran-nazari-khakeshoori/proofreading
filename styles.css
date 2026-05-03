@@ -68,6 +68,19 @@ body {
   overflow: hidden;
 }
 
+.text-card.featured {
+  background: linear-gradient(135deg, #0f172a 0%, #1d4ed8 100%);
+  border-color: rgba(96, 165, 250, 0.5);
+}
+
+.text-card.featured .text-label {
+  color: #bfdbfe;
+}
+
+.text-card.featured .text-body {
+  color: #f8fafc;
+}
+
 .text-card::before {
   content: "";
   position: absolute;
