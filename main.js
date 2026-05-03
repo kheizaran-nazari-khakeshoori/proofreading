@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   specialTexts.forEach((item) => {
     const card = document.createElement("article");
-    card.className = "text-card";
+    card.className = item.featured ? "text-card featured" : "text-card";
 
     const label = document.createElement("div");
     label.className = "text-label";
