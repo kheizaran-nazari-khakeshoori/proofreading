@@ -85,6 +85,16 @@ body[data-theme="light"] .text-card.featured {
   margin-bottom: 2.5rem;
 }
 
+.text-count {
+  margin-top: 0.75rem;
+  color: #cbd5e1;
+  font-size: 0.97rem;
+}
+
+body[data-theme="light"] .text-count {
+  color: #475569;
+}
+
 .page-header h1 {
   font-size: clamp(2.5rem, 4vw, 3rem);
   margin-bottom: 0.25rem;
