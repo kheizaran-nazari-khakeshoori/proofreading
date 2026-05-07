@@ -4,6 +4,18 @@ document.addEventListener("DOMContentLoaded", () => {
     yearEl.textContent = new Date().getFullYear().toString();
   }
 
+  const themeToggle = document.getElementById("themeToggle");
+  const currentTheme = localStorage.getItem("theme") || "dark";
+  document.body.dataset.theme = currentTheme;
+
+  if (themeToggle) {
+    themeToggle.addEventListener("click", () => {
+      const nextTheme = document.body.dataset.theme === "dark" ? "light" : "dark";
+      document.body.dataset.theme = nextTheme;
+      localStorage.setItem("theme", nextTheme);
+    });
+  }
+
   const list = document.getElementById("texts");
   if (!list || typeof specialTexts === "undefined") return;
 
