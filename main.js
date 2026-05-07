@@ -4,6 +4,11 @@ document.addEventListener("DOMContentLoaded", () => {
     yearEl.textContent = new Date().getFullYear().toString();
   }
 
+  const textCount = document.getElementById("textCount");
+  if (textCount && typeof specialTexts !== "undefined") {
+    textCount.textContent = `${specialTexts.length} special texts are ready to read.`;
+  }
+
   const themeToggle = document.getElementById("themeToggle");
   const currentTheme = localStorage.getItem("theme") || "dark";
   document.body.dataset.theme = currentTheme;
