@@ -5,8 +5,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const textCount = document.getElementById("textCount");
-  if (textCount && typeof specialTexts !== "undefined") {
-    textCount.textContent = `${specialTexts.length} special texts are ready to read.`;
+  if (textCount) {
+    if (!Array.isArray(specialTexts) || specialTexts.length === 0) {
+      textCount.textContent = "No special texts available.";
+    } else {
+      const count = specialTexts.length;
+      textCount.textContent = `${count} special text${count === 1 ? "" : "s"} ready to read.`;
+    }
   }
 
   const themeToggle = document.getElementById("themeToggle");
