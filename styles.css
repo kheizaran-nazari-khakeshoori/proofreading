@@ -9,6 +9,7 @@
 }
 
 .skip-link {
+  /* Accessibility: visually hide the skip-link until it receives keyboard focus */
   position: absolute;
   left: -999px;
   top: auto;
