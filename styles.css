@@ -80,6 +80,11 @@ body[data-theme="light"] .text-card.featured {
   transform: scale(0.98);
 }
 
+.theme-toggle:focus-visible {
+  outline: 3px solid rgba(59,130,246,0.9);
+  outline-offset: 3px;
+}
+
 .page {
   min-height: 100vh;
   max-width: 960px;
