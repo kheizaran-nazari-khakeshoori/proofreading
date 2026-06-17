@@ -1,3 +1,7 @@
+/**
+ * Initialize UI when DOM is ready.
+ * Renders the special texts and sets theme from localStorage.
+ */
 document.addEventListener("DOMContentLoaded", () => {
   const yearEl = document.getElementById("year");
   if (yearEl) {
