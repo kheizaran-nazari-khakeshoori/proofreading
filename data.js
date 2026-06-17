@@ -1,3 +1,7 @@
+/*
+  specialTexts: array of objects representing short inspirational notes.
+  Each item: { label: string, featured?: boolean, body: string }
+*/
 const specialTexts = [
   {
     label: "01",
@@ -6,7 +10,7 @@ const specialTexts = [
   },
   {
     label: "02",
-    body: "Every edit is a small promise: this line will be easier to understand.",
+    body: "Every edit is a small promise: this line will be easier to understand and kinder to read.",
   },
   {
     label: "03",
